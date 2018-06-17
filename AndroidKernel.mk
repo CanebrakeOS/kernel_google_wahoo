@@ -1,11 +1,11 @@
 export KBUILD_BUILD_TIMESTAMP := $(shell $(DATE))
-export KBUILD_BUILD_USER := copperheados
-export KBUILD_BUILD_HOST := copperheados
+export KBUILD_BUILD_USER := canebrakeos
+export KBUILD_BUILD_HOST := canebrakeos
 
 #Android makefile to build kernel as a part of Android Build
 PERL		= perl
 
-KERNEL_CC := $(ANDROID_BUILD_TOP)/prebuilts/clang/host/$(HOST_OS)-x86/clang-copperhead/bin/clang
+KERNEL_CC := $(ANDROID_BUILD_TOP)/prebuilts/clang/host/$(HOST_OS)-x86/clang-canebrake/bin/clang
 KERNEL_CFLAGS := KCFLAGS=-fsanitize=local-init
 
 KERNEL_TARGET := $(strip $(INSTALLED_KERNEL_TARGET))
